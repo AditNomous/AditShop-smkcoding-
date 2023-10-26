@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-home{
+    height: 82vh;
+    background-color: rgb(32, 157, 69);
+}
+header{
+    height: 10vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+footer{
+    height: 2vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-base{
+   
+    cursor: pointer;
+    color: blue;
+    
+    
+}
+.text-base:hover{
+   font-weight: bold;
+ 
+    
+}
+.JUDUL{
+    font-size: larger;
+    font-weight: bold;
+    color: blue;
+}
+.JUDUL:hover{
+    background-color: aqua;
+    
+}
+.container-home{
+    display: flex;
+    
+    align-items: center;
+}
+.gambar{
+
+  width: 50%;
+  height: 100%;
+ display: flex;
+  float: left;
+ align-items: center;
+  justify-content: center;
+   background-color: blue;
+}
+
+.tulisan{
+    display: flex;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+  float: right;
+
+   align-items: center;
+       justify-content: center;
+  
+}
+p{
+    padding: 10px;
+}
