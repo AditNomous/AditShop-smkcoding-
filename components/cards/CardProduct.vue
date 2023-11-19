@@ -7,6 +7,11 @@ const props = defineProps({
  }
 });
 const oneProduct = ref(props.product);
+
+watch(() => props.product, (newProduct) => {
+    oneProduct.value = newProduct;
+});
+
 const addCart = () => {
  oneProduct.value.isCart = !oneProduct.value.isCart
  let localStorageData = localStorage.getItem("products");
@@ -24,10 +29,7 @@ oneProduct.value.id);
  }
 }
 </script>
-9. Setelah kita membuat fungsi add to cart yang dimana akan menyimpan data ke 
-local storage, selanjutnya kita akan mengambil data yang ada di local storage dan 
-menampilkan data tersebut. Tambahkan fungsi untuk mengambil data pada file 
-“cart.vue”
+
 <template>
  <section class="bg-white shadow-xl rounded-xl overflow-hidden">
  <div :class="`w-full h-[200px] p-5 bg-gray-300`">
